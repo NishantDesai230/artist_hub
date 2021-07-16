@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Booking System</title>
+
+    <!-- Google Fonts -->
+    
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Font Awsome -->
+  <script src="https://kit.fontawesome.com/455d39c75f.js" crossorigin="anonymous"></script>
+
+  <!-- JQuery CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Java Script Linking -->
+  <script src="./js/app.js"></script>
+
+  <style type="text/css">
+  #myvideo{
+  position: fixed;
+  top:0;
+  left:0;
+  bottom: 0;
+  min-height:100%;
+  min-width:100%;
+  z-index: -5;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.nav-link
+{
+  color: white;
+}
+
+
+.middle
+{
+  position: absolute;
+  top: 50%;
+  align-items: center;
+}
+
+  </style>
+
+</head>
+<body style="background-color: black;">
+    <section class="head">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="" style="font-family: ; font-size: 40px;"><span style="color: blue">Artist </span> Hub</a>
+                <button class="btn-main navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span style="display: none;" class="btn-close"><i class="close-icon fa fa-times  " aria-hidden="true"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <div class="nav-item">
+                    <a class="nav-link" href="#contactus" style="color: white;">Contact Us</a>
+                    </div>
+                    <div class="nav-item">
+                    <a class="nav-link" href="#aboutus" style="color: white;">About Us</a>
+                    </div>
+                    <div class="nav-item">
+                      <a class="nav-link" href="#service" style="color: white;">Our Services</a>
+                      </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="header">
+        <div class="container-fluid">
+            <div class="main" data-aos="fade-right" data-aos-duration="2000">
+                <div class="p">
+                    <video src="./public/image/art_Trim.mp4" style="background-size: cover;" autoplay muted loop id="myvideo" style="background-size:cover;"></video>
+
+  <div class="middle">
+                <h1 style="color: white; font-size: 200%;">Welcome To Artist Hub</h1><br>
+                <p style="color: white"><i>You can explore our art here!</i></p><br>
+                <div class="btn btn-outline-secondary" style="padding-left:20px;"><b><a style="color: pink;" href="./html/booking.html" style="color: white">Explore Here!</b><span>&nbsp;<i class="fas fa-chevron-right" id = "right-arrow"></i></span></a></div>
+            </div>
+  </div>
+        </div>
+        </div>
+    </section>
